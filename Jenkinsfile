@@ -7,4 +7,9 @@ pipeline{
             }
         }
     }
+    post {
+        always {
+            mail bcc: '', body: 'Thông báo kết quả build', cc: 'admindashboard.vn, quoc020721@gmail.com', from: '', replyTo: '', subject: 'Notification', to: 'quoc020721@gmail.com'
+        }
+    }
 }
