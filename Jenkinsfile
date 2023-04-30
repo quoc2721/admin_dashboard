@@ -9,7 +9,7 @@ pipeline{
     }
     post {
         always {
-            mail bcc: '', body: 'Thông báo kết quả build', cc: 'admindashboard.vn, quoc020721@gmail.com', from: '', replyTo: '', subject: 'Notification', to: 'quoc020721@gmail.com'
+           mail bcc: '', body: 'Thông báo vừa có 1 push build project update', cc: 'admindashboard.vn, quoc020721@gmail.com', from: '', replyTo: '', subject: 'Jenkins Notification ', to: 'quoc020721@gmail.com'
         }
     }
 }
